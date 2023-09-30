@@ -5,17 +5,32 @@
 		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Tutorial</title>
+
+		<link
+			rel="preload"
+			href="./assets/small.webp"
+			as="image"
+			media="(max-width: 400px)" />
+		<link
+			rel="preload"
+			href="./assets/middle.webp"
+			as="image"
+			media="(min-width: 400.1px) and (max-width: 800px)" />
+		<link
+			rel="preload"
+			href="./assets/big.webp"
+			as="image"
+			media="(min-width: 800.1px)" />
 	</head>
 
 	<body>
 		<!-- Tutorial Start -->
-		<!-- 
-		<link
-			rel="preload"
-			href="https://assets.codepen.io/907368/radial-slider-1.jpg?format=webp" /> -->
 
-		<img
-			src="https://assets.codepen.io/907368/radial-slider-1.jpg?format=webp" />
+		<picture>
+			<source srcset="./assets/small.webp" media="(max-width: 400px)" />
+			<source srcset="./assets/middle.webp" media="(max-width: 800px)" />
+			<img src="./assets/big.webp" />
+		</picture>
 
 		<!-- Tutorial Ende -->
 
